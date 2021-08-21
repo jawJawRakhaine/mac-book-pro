@@ -37,8 +37,6 @@ function discountTotal() {
     const discountedTotal = TotalPrice - discount;
     document.getElementById("final-total").innerText = discountedTotal;
     matchCode.value = "";
-  } else {
-    alert("Promo code does not match. Try again.");
   }
 }
 // 8gb memory button event-handler
