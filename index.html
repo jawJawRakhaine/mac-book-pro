@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac Book Pro</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container px-0 mt-5 mb-5">
+      <div class="row gx-5 border rounded">
+        <div class="col-4 mt-5">
+          <img src="images/mac.png" class="img-fluid border rounded" alt="" />
+        </div>
+        <div class="col-8 mt-5">
+          <div class="title">
+            <h1>Customize your Blue 24-inch iMac with Apple M1 Chip.</h1>
+            <p class="">
+              Apple M1 Chip with 8-core CPU with 4 performance cores and 4
+              efficiency cores, 7-core GPU, and 16 core Neural Engine 8GB
+              unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic
+              Mouse Magic Keyboard US English.
+            </p>
+          </div>
+          <!-- memory-section -->
+          <div class="memory mt-5">
+            <h4 class="">Memory</h4>
+            <div class="memory-btn">
+              <button id="8gb-memory-btn" class="btn btn-outline-primary">
+                8 GB unified memory
+              </button>
+              <button id="16gb-memory-btn" class="btn btn-outline-primary">
+                16 GB unified memory
+              </button>
+            </div>
+          </div>
+          <!-- storage -->
+          <div class="storage mt-5">
+            <h4 class="">Storage</h4>
+            <div class="memory-btn">
+              <button id="256gb-storage-btn" class="btn btn-outline-primary">
+                256GB SSD storage
+              </button>
+              <button id="512gb-storage-btn" class="btn btn-outline-primary">
+                512GB SSD storage
+              </button>
+              <button id="1tb-storage-btn" class="btn btn-outline-primary">
+                1TB SSD storage
+              </button>
+            </div>
+          </div>
+          <!-- delivery-option -->
+          <div class="delivery mt-5">
+            <h4 class="">Choose your delivery option</h4>
+            <div class="delivey-btn">
+              <button id="free-delivery-btn" class="btn btn-outline-primary">
+                Friday, Aug 25 FREE Prime Delivey
+              </button>
+              <button id="charge-delivery-btn" class="btn btn-outline-primary">
+                Friday, Aug 21 Delivery CHARGE $20
+              </button>
+            </div>
+          </div>
+          <!-- calculation-table -->
+          <div class="calculation-table">
+            <table class="table mt-5 mb-5 text-left">
+              <tbody>
+                <tr scope="row">
+                  <th>Best Price</th>
+                  <th>$<span id="best-price">1299</span></th>
+                </tr>
+                <tr scope="row">
+                  <th>Extra Memory Cost</th>
+                  <th>$<span id="extra-memory-cost">0</span></th>
+                </tr>
+                <tr scope="row">
+                  <th>Extra Storage Cost</th>
+                  <th>$<span id="extra-storage-cost">0</span></th>
+                </tr>
+                <tr scope="row">
+                  <th>Delivery Charge</th>
+                  <th>$<span id="delivery-cost">0</span></th>
+                </tr>
+                <tr scope="row" class="">
+                  <th>Total Price</th>
+                  <th>$<span id="total-price">1299</span></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="promo-code mb-5">
+            <label class="mb-2">Add promo code</label> <br />
+            <input type="" id="promo-input" class="p-2 rounded border-1" />
+            <button id="apply-btn" class="btn btn-danger">Apply</button>
+          </div>
+
+          <!-- calculation-table-end -->
+        </div>
+        <hr />
+        <h1 class="text-center">Total: $<span id="final-total">1299</span></h1>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
