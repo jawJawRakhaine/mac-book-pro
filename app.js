@@ -30,6 +30,7 @@ function calculationTotal() {
 // discounted total
 function discountTotal() {
   const matchCode = document.getElementById("promo-input");
+  let applied = false;
   if (matchCode.value == "stevekaku") {
     const TotalPriceText = document.getElementById("total-price");
     const TotalPrice = parseFloat(TotalPriceText.innerText);
@@ -37,7 +38,15 @@ function discountTotal() {
     const discountedTotal = TotalPrice - discount;
     document.getElementById("final-total").innerText = discountedTotal;
     matchCode.value = "";
+    applied = true;
+  } else {
+    alert("Invalid Code");
+    matchCode.value = "";
   }
+  // if (applied) {
+  //   alert("Already applied");
+  //   document.getElementById("promo-input").value = "";
+  // }
 }
 // 8gb memory button event-handler
 document
