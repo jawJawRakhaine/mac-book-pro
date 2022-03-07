@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="container px-0 mt-5 mb-5">
-      <div class="row gx-5 border rounded">
-        <div class="col-4 mt-5">
-          <img src="images/mac.png" class="img-fluid border rounded" alt="" />
+    <div class="container mt-5 mb-5">
+      <div class="row g-5 border rounded">
+        <div class="col-12 col-lg-4 mt-5">
+          <img
+            src="images/mac.png"
+            class="img img-fluid border rounded"
+            alt=""
+          />
         </div>
-        <div class="col-8 mt-5">
+        <div class="col-12 col-lg-8 mt-5">
           <div class="title">
             <h1>Customize your Blue 24-inch iMac with Apple M1 Chip.</h1>
             <p class="">
@@ -25,7 +29,7 @@
             </p>
           </div>
           <!-- memory-section -->
-          <div class="memory mt-5">
+          <div class="memory mt-5 col-12">
             <h4 class="">Memory</h4>
             <div class="memory-btn">
               <button id="8gb-memory-btn" class="btn btn-outline-primary">
@@ -37,7 +41,7 @@
             </div>
           </div>
           <!-- storage -->
-          <div class="storage mt-5">
+          <div class="storage mt-5 col-12">
             <h4 class="">Storage</h4>
             <div class="memory-btn">
               <button id="256gb-storage-btn" class="btn btn-outline-primary">
@@ -52,11 +56,11 @@
             </div>
           </div>
           <!-- delivery-option -->
-          <div class="delivery mt-5">
+          <div class="delivery mt-5 col-12">
             <h4 class="">Choose your delivery option</h4>
             <div class="delivey-btn">
               <button id="free-delivery-btn" class="btn btn-outline-primary">
-                Friday, Aug 25 FREE Prime Delivey
+                Friday, Aug 25 FREE Prime Delivery
               </button>
               <button id="charge-delivery-btn" class="btn btn-outline-primary">
                 Friday, Aug 21 Delivery CHARGE $20
@@ -90,9 +94,17 @@
               </tbody>
             </table>
           </div>
-          <div class="promo-code mb-5">
+          <div class="promo-code mb-5 p-2">
             <label class="mb-2">Add promo code</label> <br />
-            <input type="" id="promo-input" class="p-2 rounded border-1" />
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="stevekaku"
+              />
+              <label for="floatingInput">stevekaku</label>
+            </div>
             <button id="apply-btn" class="btn btn-danger">Apply</button>
           </div>
 
