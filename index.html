@@ -7,10 +7,16 @@
     <title>Mac Book Pro</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .btn:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    </style>
   </head>
   <body>
-    <div class="container mt-5 mb-5">
-      <div class="row g-5 border rounded">
+    <div class="container">
+      <div class="row g-5 border rounded mt-5 mb-3">
         <div class="col-12 col-lg-4 mt-5">
           <img
             src="images/mac.png"
@@ -106,24 +112,29 @@
               </tbody>
             </table>
           </div>
-          <div class="promo-code mb-5 p-2">
-            <label class="mb-2">Add promo code</label> <br />
+          <div class="promo-code">
+            <h4 class="">Add promo code</h4>
+            <br />
             <div class="form-floating mb-3">
               <input
                 type="text"
-                class="form-control"
+                class="form-control mt-0"
                 id="promo-input"
                 placeholder="stevekaku"
               />
               <label for="promo-code">stevekaku</label>
             </div>
-            <button id="apply-btn" class="btn btn-danger">Apply</button>
+            <button id="apply-btn" class="btn btn-outline-primary">
+              Apply
+            </button>
           </div>
 
           <!-- calculation-table-end -->
         </div>
         <hr />
-        <h1 class="text-center">Total: $<span id="final-total">1299</span></h1>
+        <h1 class="text-center mt-0">
+          Total: $<span id="final-total">1299</span>
+        </h1>
       </div>
     </div>
     <script src="app.js"></script>

@@ -28,25 +28,26 @@ function calculationTotal() {
     bestPrice + extraMemoryTotal + extraStorageTotal + deliveryCostTotal;
 }
 // discounted total
+let applied = false;
 function discountTotal() {
   const matchCode = document.getElementById("promo-input");
-  let applied = false;
-  if (matchCode.value == "stevekaku") {
-    const TotalPriceText = document.getElementById("total-price");
-    const TotalPrice = parseFloat(TotalPriceText.innerText);
-    const discount = parseFloat((TotalPrice * 20) / 100);
-    const discountedTotal = TotalPrice - discount;
-    document.getElementById("final-total").innerText = discountedTotal;
-    matchCode.value = "";
-    applied = true;
+  if (matchCode.value === "stevekaku") {
+    if (applied) {
+      alert("Already promo code applied.");
+    } else {
+      const TotalPriceText = document.getElementById("total-price");
+      const TotalPrice = parseFloat(TotalPriceText.innerText);
+      const discount = parseFloat((TotalPrice * 20) / 100);
+      const discountedTotal = TotalPrice - discount;
+      document.getElementById("final-total").innerText = discountedTotal;
+      matchCode.value = "";
+      alert("Successfully applied promo code");
+      applied = true;
+    }
   } else {
-    alert("Invalid Code");
+    alert("Invalid promo code. Please try again");
     matchCode.value = "";
   }
-  // if (applied) {
-  //   alert("Already applied");
-  //   document.getElementById("promo-input").value = "";
-  // }
 }
 // 8gb memory button event-handler
 document
