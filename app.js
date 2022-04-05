@@ -32,7 +32,7 @@ let applied = false;
 function discountTotal() {
   const matchCode = document.getElementById("promo-input");
   if (matchCode.value === "stevekaku") {
-    if (applied) {
+    if (applied == true) {
       alert("Already promo code applied.");
     } else {
       const TotalPriceText = document.getElementById("total-price");
@@ -41,11 +41,11 @@ function discountTotal() {
       const discountedTotal = TotalPrice - discount;
       document.getElementById("final-total").innerText = discountedTotal;
       matchCode.value = "";
-      alert("Successfully applied promo code");
+      alert("Successfully applied promo code.");
       applied = true;
     }
   } else {
-    alert("Invalid promo code. Please try again");
+    alert("Invalid promo code. Please try again.");
     matchCode.value = "";
   }
 }
