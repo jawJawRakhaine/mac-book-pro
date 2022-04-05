@@ -40,9 +40,9 @@ function discountTotal() {
       const discount = parseFloat((TotalPrice * 20) / 100);
       const discountedTotal = TotalPrice - discount;
       document.getElementById("final-total").innerText = discountedTotal;
-      matchCode.value = "";
       alert("Successfully applied promo code.");
       applied = true;
+      matchCode.value = "";
     }
   } else {
     alert("Invalid promo code. Please try again.");
